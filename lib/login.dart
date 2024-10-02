@@ -29,7 +29,7 @@ class LoginScreen extends StatelessWidget {
             onLogin: (loginData) {
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => Homescreen()),
+                MaterialPageRoute(builder: (context) => const Homescreen()),
               );
               SystemChannels.textInput.invokeMethod('TextInput.hide');
               TextInput.finishAutofillContext();
