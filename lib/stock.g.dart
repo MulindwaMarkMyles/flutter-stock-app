@@ -20,7 +20,7 @@ class StockAdapter extends TypeAdapter<Stock> {
       name: fields[0] as String,
       units: fields[1] as int,
       unitPrice: fields[2] as double,
-     store: fields[4] as String? ?? 'Unknown Store', // Provide a default value
+      store: fields[4] as String,
     )..totalPrice = fields[3] as double;
   }
 
